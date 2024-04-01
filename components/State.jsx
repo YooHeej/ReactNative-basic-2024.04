@@ -1,13 +1,13 @@
 import React, { useState } from "react";
-import {View, Text, Button} from "react-native";
+import {View, Text, Button, Image} from "react-native";
 
-export default function State(name) {
+export default function State({name}) {
   const [isHungry, setIsHungry] = useState(true);
   return (
     <View>
       <Image
         source={require('../assets/img/cats.jpg')}
-        style={{height: 300, borderRadius: 20, padding: 10}}
+        style={{height: 200, borderRadius: 20, padding: 10}}
       />
       <Text>
         I'm {name}, and I'm {isHungry ? 'hungry' : 'full'}!
